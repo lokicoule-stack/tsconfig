@@ -1,0 +1,38 @@
+{
+  "name": "@lokiverse/tsconfig",
+  "version": "0.0.0",
+  "private": false,
+  "description": "TypeScript configurations",
+  "author": {
+    "name": "Loïk Fekkaï",
+    "email": "loikfekkai@gmail.com"
+  },
+  "license": "MIT",
+  "keywords": [
+    "tsconfig",
+    "typescript"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lokicoule-stack/tsconfig.git"
+  },
+  "homepage": "https://github.com/lokicoule-stack/tsconfig/blob/main/README.md",
+  "bugs": {
+    "url": "https://github.com/lokicoule-stack/tsconfig/issues"
+  },
+  "scripts": {
+    "changeset": "changeset",
+    "version-packages": "changeset version",
+    "release": "changeset publish"
+  },
+  "files": [
+    "src/base.json",
+    "src/runtimes/*.json",
+    "src/frameworks/*.json",
+    "src/presets/*.json"
+  ],
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  }
+}
