@@ -14,7 +14,7 @@ pnpm add -D @lokiverse/tsconfig
 
 ```json
 {
-  "extends": "@kumikojs/tsconfig/base.json"
+  "extends": "@lokiverse/tsconfig/base.json"
 }
 ```
 
@@ -24,7 +24,7 @@ pnpm add -D @lokiverse/tsconfig
 
 ```json
 {
-  "extends": "@kumikojs/tsconfig/runtime/node.json"
+  "extends": "@lokiverse/tsconfig/runtime/node.json"
 }
 ```
 
@@ -32,7 +32,7 @@ pnpm add -D @lokiverse/tsconfig
 
 ```json
 {
-  "extends": "@kumikojs/tsconfig/runtime/browser.json"
+  "extends": "@lokiverse/tsconfig/runtime/browser.json"
 }
 ```
 
@@ -42,7 +42,7 @@ pnpm add -D @lokiverse/tsconfig
 
 ```json
 {
-  "extends": "@kumikojs/tsconfig/frameworks/react.json"
+  "extends": "@lokiverse/tsconfig/frameworks/react.json"
 }
 ```
 
@@ -50,7 +50,7 @@ pnpm add -D @lokiverse/tsconfig
 
 ```json
 {
-  "extends": "@kumikojs/tsconfig/frameworks/vite.json"
+  "extends": "@lokiverse/tsconfig/frameworks/vite.json"
 }
 ```
 
@@ -60,7 +60,7 @@ pnpm add -D @lokiverse/tsconfig
 
 ```json
 {
-  "extends": "@kumikojs/tsconfig/presets/lib-base.json"
+  "extends": "@lokiverse/tsconfig/presets/lib-base.json"
 }
 ```
 
@@ -68,7 +68,7 @@ pnpm add -D @lokiverse/tsconfig
 
 ```json
 {
-  "extends": "@kumikojs/tsconfig/presets/lib-node.json"
+  "extends": "@lokiverse/tsconfig/presets/lib-node.json"
 }
 ```
 
@@ -76,7 +76,7 @@ pnpm add -D @lokiverse/tsconfig
 
 ```json
 {
-  "extends": "@kumikojs/tsconfig/presets/lib-browser.json"
+  "extends": "@lokiverse/tsconfig/presets/lib-browser.json"
 }
 ```
 
@@ -84,6 +84,6 @@ pnpm add -D @lokiverse/tsconfig
 
 ```json
 {
-  "extends": "@kumikojs/tsconfig/presets/lib-react.json"
+  "extends": "@lokiverse/tsconfig/presets/lib-react.json"
 }
 ```
