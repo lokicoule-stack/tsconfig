@@ -1,5 +1,13 @@
 # @lokiverse/tsconfig
 
+## 0.1.1
+
+### Patch Changes
+
+- 956b342: fix: correct tsconfig paths in README.md
+
+  - Updated tsconfig paths from @kumikojs to @lokiverse in README.md
+
 ## 0.1.0
 
 ### Minor Changes
