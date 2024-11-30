@@ -33,6 +33,7 @@
   ],
   "publishConfig": {
     "access": "public",
+    "tag": "latest",
     "registry": "https://registry.npmjs.org/"
   },
   "devDependencies": {
