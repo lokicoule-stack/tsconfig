@@ -25,6 +25,18 @@
     "version-packages": "changeset version",
     "release": "changeset publish"
   },
+  "exports": {
+    ".": "./src/base.json",
+    "./base": "./src/base.json",
+    "./runtime/node": "./src/runtimes/node.json",
+    "./runtime/browser": "./src/runtimes/browser.json",
+    "./frameworks/react": "./src/frameworks/react.json",
+    "./frameworks/vite": "./src/frameworks/vite.json",
+    "./presets/lib-base": "./src/presets/lib-base.json",
+    "./presets/lib-node": "./src/presets/lib-node.json",
+    "./presets/lib-browser": "./src/presets/lib-browser.json",
+    "./presets/lib-react": "./src/presets/lib-react.json"
+  },
   "files": [
     "src/base.json",
     "src/runtimes/*.json",

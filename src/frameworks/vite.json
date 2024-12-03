@@ -1,7 +1,6 @@
 {
   "$schema": "https://json.schemastore.org/tsconfig",
   "display": "Vite Configuration",
-  "extends": "../runtime/browser.json",
   "compilerOptions": {
     "useDefineForClassFields": true,
     "allowImportingTsExtensions": true,
