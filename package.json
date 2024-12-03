@@ -28,8 +28,8 @@
   "exports": {
     ".": "./src/base.json",
     "./base": "./src/base.json",
-    "./runtime/node": "./src/runtimes/node.json",
-    "./runtime/browser": "./src/runtimes/browser.json",
+    "./runtimes/node": "./src/runtimes/node.json",
+    "./runtimes/browser": "./src/runtimes/browser.json",
     "./frameworks/react": "./src/frameworks/react.json",
     "./frameworks/vite": "./src/frameworks/vite.json",
     "./presets/lib-base": "./src/presets/lib-base.json",

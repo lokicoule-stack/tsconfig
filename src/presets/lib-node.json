@@ -1,7 +1,7 @@
 {
   "$schema": "https://json.schemastore.org/tsconfig",
   "display": "Node.js Library Configuration",
-  "extends": ["../runtime/node.json", "./lib-base.json"],
+  "extends": ["./lib-base.json", "../runtimes/node.json"],
   "compilerOptions": {
     "module": "NodeNext",
     "moduleResolution": "NodeNext"

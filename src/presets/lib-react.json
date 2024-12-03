@@ -2,8 +2,8 @@
   "$schema": "https://json.schemastore.org/tsconfig",
   "display": "React Library Configuration",
   "extends": [
-    "../runtime/browser.json",
     "./lib-base.json",
+    "../runtime/browser.json",
     "../frameworks/react.json"
   ]
 }
