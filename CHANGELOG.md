@@ -1,5 +1,14 @@
 # @lokiverse/tsconfig
 
+## 0.2.1
+
+### Patch Changes
+
+- d9ec32f: fix: correct paths in tsconfig presets and exports
+
+  - Updated exports paths in package.json
+  - Corrected extends paths in lib-browser.json, lib-node.json, and lib-react.json
+
 ## 0.2.0
 
 ### Minor Changes
