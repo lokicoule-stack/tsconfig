@@ -1,0 +1,14 @@
+{
+  "$schema": "https://json.schemastore.org/tsconfig",
+  "display": "Universal Library Configuration (Node.js + Bun)",
+  "extends": "./lib-base.json",
+  "compilerOptions": {
+    "target": "ES2022",
+    "lib": ["ES2022"],
+    "module": "ESNext",
+    "moduleResolution": "Bundler",
+    "types": ["node"],
+    "verbatimModuleSyntax": false,
+    "allowImportingTsExtensions": false
+  }
+}

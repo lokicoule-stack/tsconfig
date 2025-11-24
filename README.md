@@ -7,109 +7,43 @@
 <div align="center">
 
 [![npm version](https://img.shields.io/npm/v/@lokiverse/tsconfig.svg)](https://www.npmjs.com/package/@lokiverse/tsconfig)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
+
+Composable TypeScript configurations for modern development.
 
 </div>
 
-<div align="center">
-  <strong>Composable TypeScript configurations for modern development environments</strong>
-</div>
-
-<br />
-
-## 📦 Installation
+## Quick Start
 
 ```bash
-pnpm add -D @lokiverse/tsconfig
+npm install -D @lokiverse/tsconfig
 ```
 
-## 🔧 Configuration Types
-
-This package provides several types of configurations that can be combined to create perfect TypeScript setup:
-
-- **Base Configuration**: Core TypeScript settings
-- **Runtime Configurations**: Environment-specific settings (Node.js, Browser)
-- **Framework Configurations**: Framework-specific settings (React, Vite)
-- **Library Presets**: Pre-configured combinations for common use cases
-
-## 📝 Usage
-
-### Base Configuration
-
-The foundation for all configurations:
+**tsconfig.json**
 
 ```json
 {
-  "extends": "@lokiverse/tsconfig"
+  "extends": "@lokiverse/tsconfig/presets/lib-universal"
 }
 ```
 
-### Runtime Configurations
+## Library Presets
 
-Runtime configurations should be combined with either the base configuration or framework configurations:
+| Preset          | Target          | Module Resolution | Use Case            |
+| --------------- | --------------- | ----------------- | ------------------- |
+| `lib-universal` | Node.js + Bun   | Bundler           | Universal libraries |
+| `lib-node`      | Node.js         | NodeNext          | Node.js libraries   |
+| `lib-browser`   | Browser         | Bundler           | Browser libraries   |
+| `lib-react`     | Browser + React | Bundler           | React libraries     |
 
-#### Node.js Runtime
+### Universal Library (Node.js + Bun)
 
 ```json
 {
-  "extends": ["@lokiverse/tsconfig", "@lokiverse/tsconfig/runtime/node"]
+  "extends": "@lokiverse/tsconfig/presets/lib-universal"
 }
 ```
 
-#### Browser Runtime
-
-```json
-{
-  "extends": ["@lokiverse/tsconfig", "@lokiverse/tsconfig/runtime/browser"]
-}
-```
-
-### Framework Configurations
-
-Framework configurations should be combined with runtime configurations:
-
-#### React with Browser Runtime
-
-```json
-{
-  "extends": [
-    "@lokiverse/tsconfig",
-    "@lokiverse/tsconfig/runtime/browser",
-    "@lokiverse/tsconfig/frameworks/react"
-  ]
-}
-```
-
-#### Vite with Browser Runtime
-
-```json
-{
-  "extends": [
-    "@lokiverse/tsconfig",
-    "@lokiverse/tsconfig/runtime/browser",
-    "@lokiverse/tsconfig/frameworks/vite"
-  ]
-}
-```
-
-### Library Presets
-
-Pre-configured combinations for common use cases. These already include the appropriate runtime and framework configurations:
-
-#### Base Library
-
-Foundation for library development:
-
-```json
-{
-  "extends": "@lokiverse/tsconfig/presets/lib-base"
-}
-```
-
-#### Node.js Library
-
-Complete setup for Node.js libraries:
+### Node.js Library
 
 ```json
 {
@@ -117,9 +51,7 @@ Complete setup for Node.js libraries:
 }
 ```
 
-#### Browser Library
-
-Complete setup for browser libraries:
+### Browser Library
 
 ```json
 {
@@ -127,9 +59,7 @@ Complete setup for browser libraries:
 }
 ```
 
-#### React Library
-
-Complete setup for React libraries:
+### React Library
 
 ```json
 {
@@ -137,34 +67,68 @@ Complete setup for React libraries:
 }
 ```
 
-## 🔨 Creating Custom Combinations
+## Custom Configurations
 
-### React Application with Node.js Backend
+### Composable Configs
+
+Build custom configs by combining base, runtime, and framework configs.
+
+**React App with Node.js**
 
 ```json
 {
   "extends": [
     "@lokiverse/tsconfig",
-    "@lokiverse/tsconfig/runtime/node",
+    "@lokiverse/tsconfig/runtimes/node",
     "@lokiverse/tsconfig/frameworks/react"
-  ],
-  "compilerOptions": {
-    // custom options here
-  }
+  ]
 }
 ```
 
-### Vite Application with Browser Features
+**Vite App**
 
 ```json
 {
   "extends": [
     "@lokiverse/tsconfig",
-    "@lokiverse/tsconfig/runtime/browser",
+    "@lokiverse/tsconfig/runtimes/browser",
     "@lokiverse/tsconfig/frameworks/vite"
-  ],
-  "compilerOptions": {
-    // custom options here
-  }
+  ]
 }
 ```
+
+## Available Configs
+
+### Base
+
+- `@lokiverse/tsconfig` - Core TypeScript settings
+
+### Runtimes
+
+- `@lokiverse/tsconfig/runtimes/node` - Node.js environment
+- `@lokiverse/tsconfig/runtimes/browser` - Browser environment
+
+### Frameworks
+
+- `@lokiverse/tsconfig/frameworks/react` - React support
+- `@lokiverse/tsconfig/frameworks/vite` - Vite support
+
+### Library Presets
+
+- `@lokiverse/tsconfig/presets/lib-base` - Base library config
+- `@lokiverse/tsconfig/presets/lib-universal` - Node.js + Bun
+- `@lokiverse/tsconfig/presets/lib-node` - Node.js only
+- `@lokiverse/tsconfig/presets/lib-browser` - Browser only
+- `@lokiverse/tsconfig/presets/lib-react` - React libraries
+
+## What's Included
+
+- Strict type checking enabled
+- Source maps and declarations
+- Modern ES2022 target
+- Optimized for bundlers
+- Incremental compilation support
+
+## License
+
+MIT

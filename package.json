@@ -3,27 +3,22 @@
   "version": "0.2.1",
   "private": false,
   "description": "TypeScript configurations",
-  "author": {
-    "name": "Loïk Fekkaï",
-    "email": "loikfekkai@gmail.com"
-  },
-  "license": "MIT",
   "keywords": [
     "tsconfig",
     "typescript"
   ],
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/lokicoule-stack/tsconfig.git"
-  },
   "homepage": "https://github.com/lokicoule-stack/tsconfig/blob/main/README.md",
   "bugs": {
     "url": "https://github.com/lokicoule-stack/tsconfig/issues"
   },
-  "scripts": {
-    "changeset": "changeset",
-    "version-packages": "changeset version",
-    "release": "changeset publish"
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lokicoule-stack/tsconfig.git"
+  },
+  "license": "MIT",
+  "author": {
+    "name": "Loïk Fekkaï",
+    "email": "loikfekkai@gmail.com"
   },
   "exports": {
     ".": "./src/base.json",
@@ -35,7 +30,8 @@
     "./presets/lib-base": "./src/presets/lib-base.json",
     "./presets/lib-node": "./src/presets/lib-node.json",
     "./presets/lib-browser": "./src/presets/lib-browser.json",
-    "./presets/lib-react": "./src/presets/lib-react.json"
+    "./presets/lib-react": "./src/presets/lib-react.json",
+    "./presets/lib-universal": "./src/presets/lib-universal.json"
   },
   "files": [
     "src/base.json",
@@ -43,13 +39,18 @@
     "src/frameworks/*.json",
     "src/presets/*.json"
   ],
-  "publishConfig": {
-    "access": "public",
-    "tag": "latest",
-    "registry": "https://registry.npmjs.org/"
+  "scripts": {
+    "changeset": "changeset",
+    "release": "changeset publish",
+    "version-packages": "changeset version"
   },
   "devDependencies": {
     "@changesets/cli": "^2.27.10",
     "@lokiverse/changesets-config": "^0.1.0"
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/",
+    "tag": "latest"
   }
 }
