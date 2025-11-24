@@ -1,5 +1,3 @@
-# @lokiverse/tsconfig
-
 <div align="center">
  <img src="https://github.com/lokicoule-stack/tsconfig/blob/main/media/repo-header.svg?raw=true" alt="Lokiverse TypeScript Configuration" />
 </div>
